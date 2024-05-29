@@ -1,0 +1,49 @@
+<html>
+  <head>
+
+    <title>To do list</title>
+
+    <link rel="stylesheet" href="MyTodoListV2.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <div class="appform">
+      <h1>Todo List</h1>
+      <div class="itmform">
+        <h3>Add Task</h3>
+       
+        <input type="text" id="litm" placeholder="Add Task..." />
+        <input id="sbbtn" class="subbtn" type="button" value="Submit" onclick="addItem()" />
+        <input id="btnOK" type="button" value="Ok" onclick="editDoneItem()" />
+
+        <div class="tb">
+          <table id="tbl"></table>
+        </div>
+        <hr />
+        <div class="all">
+          <h3>Completed Task</h3>
+
+          <div class="tb">
+            <table id="tbl2"></table>
+          </div>
+          <input
+            id="dltbtn2"
+            type="button"
+            value="Delete All"
+            onclick="dltAllItem()"
+          />
+        </div>
+      </div>
+    </div>
+
+  </body>
+  <script src="MyTodoListV2.js"></script>
+</html>
